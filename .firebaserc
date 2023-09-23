@@ -1,0 +1,18 @@
+{
+  "projects": {
+    "default": "investok-ebfbb"
+  },
+  "targets": {
+    "investok-ebfbb": {
+      "hosting": {
+        "dev-investok": [
+          "dev-investok"
+        ],
+        "investok-ebfbb": [
+          "investok-ebfbb"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}

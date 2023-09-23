@@ -1,0 +1,95 @@
+.subcrib {
+  background-color: #000000;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.subcrib .card-info {
+  background-color: #140007;
+  border-radius: 20px;
+  padding: 20px;
+  color: #ffffff;
+}
+.subcrib .btn-one {
+  border-radius: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5px 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1rem;
+  color: #fdfdfd;
+  border: solid 1px transparent;
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, #c81b63, #f0b21f);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  -webkit-box-shadow: 2px 1000px 1px #0d1011 inset;
+          box-shadow: 2px 1000px 1px #0d1011 inset;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+@media (max-width: 767px) {
+  .subcrib .btn-one {
+    font-size: 12px;
+  }
+}
+.subcrib .btn-one:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.subcrib .btn-one .icon {
+  width: 15px;
+  height: 15px;
+  line-height: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 10px;
+}
+.subcrib .btn-one .icon img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.camp-subc {
+  border: solid 1px transparent;
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, #c81b63, #f0b21f);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  -webkit-box-shadow: 2px 1000px 1px #0d1011 inset;
+          box-shadow: 2px 1000px 1px #0d1011 inset;
+  border-radius: 25px;
+  padding: 5px;
+}
+.camp-subc input {
+  background-color: transparent;
+  border: 0;
+}
+.camp-subc .form-control:disabled {
+  background-color: transparent;
+  border: 0;
+}
+.camp-subc .input-group-text {
+  background-color: transparent;
+  border: 0;
+}
+.camp-subc .input-group-text a {
+  color: #ffffff;
+}/*# sourceMappingURL=style.css.map */

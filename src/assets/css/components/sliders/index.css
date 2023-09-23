@@ -1,0 +1,14 @@
+.slider-artits .swiper-slide-prev img,
+.swiper-slide-next img,
+.swiper-slide img {
+  width: 75%;
+}
+
+.slider-artits .swiper-slide-active img {
+  width: 100%;
+}
+
+.slider-artits .swiper-wrapper {
+  display: flex;
+  align-items: center;
+}

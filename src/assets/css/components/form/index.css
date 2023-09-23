@@ -1,0 +1,54 @@
+.form-mint {
+  margin-top: 2rem;
+  max-width: 450px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+::placeholder {
+  color: #000;
+}
+input {
+  border-radius: 20px;
+  border: none;
+  background: #e2e2e2;
+  width: 100%;
+}
+
+input:focus {
+  border: none;
+  outline: none;
+}
+
+input:active {
+  border: none;
+}
+.box-input {
+  width: 100%;
+  position: relative;
+  border: 1px solid transparent;
+  border-radius: 30px;
+  background: #e2e2e2;
+  background-clip: padding-box;
+  padding: 10px 1.5rem;
+}
+
+.box-input::after {
+  position: absolute;
+  top: -2px;
+  bottom: -2px;
+  left: -2px;
+  right: -2px;
+  background: linear-gradient(to right, #37e2d5, #0525a2);
+  content: "";
+  z-index: -1;
+  border-radius: 30px;
+}
+
+.icon-user-form {
+  margin-right: 1.5rem;
+  width: 55px;
+  margin-top: -10px;
+}
