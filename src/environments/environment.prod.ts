@@ -2,11 +2,7 @@ export const environment = {
   production: true,
   dbPrefix: "prod_",
   seedKey: "PROD_NEXCHAIN_2023$$**$%&",
-  projectName: "NEXCHAIN",
-  API_URL: "https://nexchain-4a28a.uc.r.appspot.com",
-  urlWeb: "https://nexchain.io",
-  configUrlAbi: "/assets/abi/erc721s.json",
-  API_KEY_BSC: "4S2UBP9NC7GS85BUV4HIJ76HNV73AY8YNH",
+  projectName: "prueba",
   firebase: {
     apiKey: "AIzaSyADgeci6zXBbe3fy4kQWOCb-wtroyYrSsE",
     authDomain: "prueba-web-3-d0d9b.firebaseapp.com",
@@ -16,37 +12,13 @@ export const environment = {
     appId: "1:597985723991:web:86b149ff43c998e928c512",
     measurementId: "G-6CSH6BG6M3",
   },
-  API_GEMYN: "https://gplay.bet/api/controllers/pasarelas/Gplay/status.php",
-  AUTH_KEY_GEMYN_API: "1f7ad89017b43a27a97747a0d0967662",
+
   contractAddress: "0xc51473429389a307c68E32685a26C20b55705A97",
-  walletRoot: "0x78303360ec1ACA06F195f48F75D6D59107810Dff",
   urlTokenLogo: "#",
   mainToken: {
     contract: "#",
     name: "#",
     symbol: "#",
     decimals: 18,
-  },
-  chain: {
-    walletConnectID: "4af18cacaeb09f42b4d325033743f639",
-    infuraId: "356256bc3fcf42de88d2bc2e129ea5d9",
-    chainId: 56,
-    chainIdMetamask: "0X38",
-    chainName: "BNB Smart Chain Mainnet",
-    rpc: "https://nd-971-625-219.p2pify.com/24a342434e8d90b2f9ba75134d971c6e",
-    rpcUrls: [
-      "https://nd-971-625-219.p2pify.com/24a342434e8d90b2f9ba75134d971c6e",
-    ],
-    blockExplorerUrls: ["https://bscscan.com/"],
-    scan: "https://bscscan.com/tx/",
-    scanNft: "https://bscscan.com/token/",
-
-    nativeCurrency: {
-      web3ModalNetwork: "binance",
-      network: "BNB",
-      name: "BNB",
-      symbol: "BNB",
-      decimals: 18,
-    },
   },
 };

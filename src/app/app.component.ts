@@ -13,10 +13,10 @@ export class AppComponent implements OnInit {
   authenticated: boolean = false;
   data: string[] | undefined;
 
-  constructor(private commonService: CommonService, private web3: Web3Service) {
-    console.log("MAIN:", environment.chain.chainId);
-    console.log("MAIN:", environment.chain.rpc);
-  }
+  constructor(
+    private commonService: CommonService,
+    private web3: Web3Service
+  ) {}
 
   async ngOnInit(): Promise<void> {}
 
