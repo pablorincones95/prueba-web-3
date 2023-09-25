@@ -9,17 +9,16 @@ export const environment = {
   production: false,
   dbPrefix: "dev_",
   projectName: "prueba-web=3",
-  API_KEY_BSC: "4S2UBP9NC7GS85BUV4HIJ76HNV73AY8YNH",
-
-  configUrlAbi: "/assets/abi/erc721s.json",
+  // API_KEY_BSC: "4S2UBP9NC7GS85BUV4HIJ76HNV73AY8YNH",
+  // configUrlAbi: "/assets/abi/erc721s.json",
   firebase: {
-    apiKey: "AIzaSyAYiUcHPJHWQu-MDabRVSEXB7wg8__aHKc",
-    authDomain: "nexchain-4a28a.firebaseapp.com",
-    projectId: "nexchain-4a28a",
-    storageBucket: "nexchain-4a28a.appspot.com",
-    messagingSenderId: "318604614914",
-    appId: "1:318604614914:web:d5a86a5dff65b10a48361b",
-    measurementId: "G-72025WRG47",
+    apiKey: "AIzaSyADgeci6zXBbe3fy4kQWOCb-wtroyYrSsE",
+    authDomain: "prueba-web-3-d0d9b.firebaseapp.com",
+    projectId: "prueba-web-3-d0d9b",
+    storageBucket: "prueba-web-3-d0d9b.appspot.com",
+    messagingSenderId: "597985723991",
+    appId: "1:597985723991:web:86b149ff43c998e928c512",
+    measurementId: "G-6CSH6BG6M3",
   },
 
   // DEV

@@ -1,0 +1,66 @@
+<form class="row g-3 pt-3" [formGroup]="form" novalidate autocomplete="off">
+  <div class="col-12 col-md-6">
+    <label for="title-input" class="form-label">Titulo</label>
+    <input
+      type="text"
+      class="form-control"
+      id="inputEmail4"
+      formControlName="title"
+    />
+    <ng-container
+      [ngTemplateOutlet]="renderVM"
+      [ngTemplateOutletContext]="{ field: 'title' }"
+    ></ng-container>
+  </div>
+  <div class="col-12 col-md-6">
+    <label for="inputState" class="form-label">prioridad</label>
+    <select id="inputState" class="form-select" formControlName="priority">
+      <option selected>Elige una</option>
+      <option value="alta">Alta</option>
+      <option value="media">Media</option>
+      <option value="baja">Baja</option>
+    </select>
+    <ng-container
+      [ngTemplateOutlet]="renderVM"
+      [ngTemplateOutletContext]="{ field: 'priority' }"
+    ></ng-container>
+  </div>
+  <div class="col-12">
+    <label for="inputAddress2" class="form-label">Comentario</label>
+    <textarea
+      class="form-control"
+      formControlName="comment"
+      id=""
+      cols="30"
+      rows="7"
+    ></textarea>
+    <ng-container
+      [ngTemplateOutlet]="renderVM"
+      [ngTemplateOutletContext]="{ field: 'comment' }"
+    ></ng-container>
+  </div>
+
+  <div class="col-12">
+    <div class="col">
+      <ng-container *ngIf="!loading; else renderLoadingBtn">
+        <button type="submit" class="btn btn-dark" (click)="onSubmit()">
+          Guardar
+        </button>
+      </ng-container>
+    </div>
+  </div>
+</form>
+
+<ng-template #renderLoadingBtn>
+  <button type="submit" class="btn btn-dark" disabled>Procesando</button>
+</ng-template>
+
+<ng-template #renderVM let-field="field">
+  <div class="mt-1 mx-2 mb-3" *ngIf="submit">
+    <ng-container *ngFor="let val of vm[field]">
+      <span class="text-danger" *ngIf="f[field].hasError(val.type)">
+        {{ val.message | titlecase }}
+      </span>
+    </ng-container>
+  </div>
+</ng-template>

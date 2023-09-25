@@ -1,13 +1,58 @@
-<form [formGroup]="formulario">
-
-    <div class="form-group">
-        <label for="campo">Campo:</label>
-        <input type="text" id="campo" formControlName="campo" class="form-control">
-
-        <!-- Aquí es donde manejas los errores -->
-
+<app-header></app-header>
+<div class="container mt-5 pt-3">
+  <div class="row justify-content-center">
+    <div class="col-12">
+      <div class="card border-dark mb-3">
+        <div class="card-header text-dark fw-bold">Tareas</div>
+        <div class="card-body text-dark">
+          <nav>
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+              <button
+                class="nav-link active"
+                id="nav-home-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#nav-home"
+                type="button"
+                role="tab"
+                aria-controls="nav-home"
+                aria-selected="true"
+              >
+                Lista de tareas
+              </button>
+              <button
+                class="nav-link"
+                id="nav-create-task-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#nav-create-task"
+                type="button"
+                role="tab"
+                aria-controls="nav-create-task"
+                aria-selected="false"
+              >
+                Agregar Tareas
+              </button>
+            </div>
+          </nav>
+          <div class="tab-content" id="nav-tabContent">
+            <div
+              class="tab-pane fade show active"
+              id="nav-home"
+              role="tabpanel"
+              aria-labelledby="nav-home-tab"
+            >
+              <app-lists-task></app-lists-task>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="nav-create-task"
+              role="tabpanel"
+              aria-labelledby="nav-profile-tab"
+            >
+              <app-form-create-task></app-form-create-task>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-
-    <button type="submit" class="btn btn-primary">Enviar</button>
-
-</form>
+  </div>
+</div>

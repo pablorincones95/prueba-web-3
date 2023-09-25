@@ -18,6 +18,7 @@ import { environment } from "src/environments/environment";
 
 import { TranslateModule, TranslateLoader } from "@ngx-translate/core";
 import { TranslateHttpLoader } from "@ngx-translate/http-loader";
+import { SharedModule } from "./shared/shared.module";
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
@@ -53,6 +54,7 @@ export function createTranslateLoader(http: HttpClient) {
     AngularFireAnalyticsModule,
     AngularFireStorageModule,
     AngularFirestoreModule,
+    SharedModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

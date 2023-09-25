@@ -1,21 +1,21 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-import { RechargeComponent } from './recharge/recharge.component';
+import { NgModule } from "@angular/core";
+import { RouterModule, Routes } from "@angular/router";
+import { HomeComponent } from "./home/home.component";
 
 const routes: Routes = [
   {
-    path: 'home',
-    component: RechargeComponent
+    path: "home",
+    component: HomeComponent,
   },
   {
     path: "**",
     pathMatch: "full",
-    redirectTo: "/pages/home"
-  }
+    redirectTo: "/pages/home",
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class PagesRoutingModule { }
+export class PagesRoutingModule {}
